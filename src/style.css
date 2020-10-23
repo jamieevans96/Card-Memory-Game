@@ -1,0 +1,61 @@
+@import url(//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon);
+
+html {
+  font-family: Lato;
+}
+
+.cardStyle {
+  height: 200px;
+  width: 200px;
+  background-color:rgb(96, 106, 255);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin: 10px;
+  border: #fff solid 4px;
+  box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.25), inset 0px 4px 15px 0px rgba(0,0,0,0.15);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+/* .cardStyle:hover {
+  transform: scale(1.02);
+} */
+
+.cardStyle:hover img {
+  height: 150px
+}
+
+.cardStyle:active {
+  transform: scale(0.98);
+  filter: brightness(0.8)
+}
+
+.cardsWrapper {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  width: 660px
+}
+
+img {
+  height: 150px;
+  transition: all 0.2s
+}
+
+@media (max-width: 768px) {
+  .cardStyle {
+    width: 150px;
+    height: 150px;
+  }
+
+  .cardsWrapper {
+    width: 510px
+  }
+
+  img {
+    height: 120px
+  }
+}
